@@ -58,8 +58,8 @@ After create/update/delete operations, lists are refreshed from the database to 
 ## Installation
 
 ```bash
-git clone <repository-url>
-cd todo
+git clone git@github.com:kjaneczko/Todo-App---Laravel-Livewire.git
+cd Todo-App---Laravel-Livewire
 composer install
 ```
 
@@ -67,6 +67,18 @@ Create the database and run migrations:
 
 ```bash
 php artisan migrate
+```
+
+Create .env file:
+
+```bash
+cp .env-example .env
+```
+
+Generate keys:
+
+```bash
+php artisan key:generate
 ```
 
 Start the development server:
